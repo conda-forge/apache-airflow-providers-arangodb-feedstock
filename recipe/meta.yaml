@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_arangodb-{{ version }}.tar.gz
   sha256: b979a4d940c0fde250a8896862bcd24c05ce829d4626b88dbdb5d94cc7607cfe
 
 build:
