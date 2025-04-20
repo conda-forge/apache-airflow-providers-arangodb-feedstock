@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-arangodb" %}
-{% set version = "2.7.3" %}
+{% set version = "2.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_arangodb-{{ version }}.tar.gz
-  sha256: 58d83105b5e90b03253fa9027197dcfa30e273410c9530c988dc405149acedcb
+  sha256: cfd489f2031fc7110e25788850e7ac412909970ac52076de79c964d808d62b8c
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.11.0
+    - flit-core ==3.12.0
     - pip
   run:
     - python >={{ python_min }},<4.dev0
