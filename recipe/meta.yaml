@@ -1,5 +1,6 @@
 {% set name = "apache-airflow-providers-arangodb" %}
 {% set version = "2.8.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
