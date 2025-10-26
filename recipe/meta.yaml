@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-arangodb" %}
-{% set version = "2.8.2" %}
+{% set version = "2.8.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_arangodb-{{ version }}.tar.gz
-  sha256: c5b0540e6a0507b98aecc28bfa5575cdafff0c4ffce570addc4c092049001154
+  sha256: dd804533914ba3f041c9aed87bd4331b3fbb661793dc01a5f2b598e51198bb83
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - python-arango >=7.3.2
 
 test:
