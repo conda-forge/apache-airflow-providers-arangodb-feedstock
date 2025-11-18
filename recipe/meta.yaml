@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-arangodb" %}
-{% set version = "2.8.3" %}
-{% set python_min = "3.10" %}
+{% set version = "2.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_arangodb-{{ version }}.tar.gz
-  sha256: dd804533914ba3f041c9aed87bd4331b3fbb661793dc01a5f2b598e51198bb83
+  sha256: 10621bc5598dad815fdf107a2fe5b726a7eefd300e44bdbff4146312ea5f5b5d
 
 build:
   noarch: python
@@ -39,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-arangodb for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/arangodb/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-arangodb/stable/index.html
   dev_url: https://github.com/apache/airflow/
