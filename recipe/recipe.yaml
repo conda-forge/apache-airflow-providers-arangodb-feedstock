@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-arangodb
-  version: "2.9.2"
+  version: "2.9.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_arangodb-${{ version }}.tar.gz
-  sha256: f75ed1ed89baa8bd291eaf40a321e7d2075036bee7239895603b41c07ecf1326
+  sha256: 869861a731694031dfabb86d20c9159155b9737c02849e3d2f2f9ae952d321df
 
 build:
   noarch: python
